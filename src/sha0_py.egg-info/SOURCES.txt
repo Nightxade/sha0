@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/sha0.py
+src/sha0_py.egg-info/PKG-INFO
+src/sha0_py.egg-info/SOURCES.txt
+src/sha0_py.egg-info/dependency_links.txt
+src/sha0_py.egg-info/top_level.txt
+test/test.py
