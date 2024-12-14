@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sha0"
+version = "0.0.1"
+authors = [
+  { name="nightxade", email="matthew.cai.official@gmail.com" },
+]
+description = "A package implementing the broken SHA-0 hash algorithm."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Topic :: Security",
+]
+keywords = ["sha0", "SHA-0", "hash"]
+
+[project.urls]
+homepage = "https://github.com/nightxade/sha0"
+issues = "https://github.com/nightxade/sha0/issues"
