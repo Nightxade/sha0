@@ -1,6 +1,7 @@
 from sha0 import sha0
 from secrets import token_bytes
 import subprocess
+import os
 
 for i in range(100):
     m1 = token_bytes(96)
@@ -25,3 +26,5 @@ for i in range(100):
     
     c_hash = subprocess.Popen(["./test/sha0", "test/test_data"], stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()[1].strip()
     assert h1 == c_hash
+
+os.remove('test/test_data')
