@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "sha0-py"
 version = "0.0.1"
 authors = [
-  { name="nightxade", email="matthew.cai.official@gmail.com" },
+  { name="nightxade", email="matthewcaieatsrice@gmail.com" },
 ]
 description = "A package implementing the broken SHA-0 hash algorithm."
 readme = "README.md"
