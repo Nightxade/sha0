@@ -2,7 +2,7 @@ Metadata-Version: 2.1
 Name: sha0-py
 Version: 0.0.1
 Summary: A package implementing the broken SHA-0 hash algorithm.
-Author-email: nightxade <matthew.cai.official@gmail.com>
+Author-email: nightxade <matthewcaieatsrice@gmail.com>
 Project-URL: homepage, https://github.com/nightxade/sha0
 Project-URL: issues, https://github.com/nightxade/sha0/issues
 Keywords: sha0,SHA-0,hash
@@ -12,6 +12,7 @@ Classifier: License :: OSI Approved :: MIT License
 Classifier: Natural Language :: English
 Classifier: Operating System :: OS Independent
 Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
 Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 License-File: LICENSE
