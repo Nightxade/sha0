@@ -1,6 +1,6 @@
 ### IMPORTS
-from enum import Enum
-from copy import deepcopy
+from enum import Enum as _Enum
+from copy import deepcopy as _deepcopy
 
 ### SETUP
 # macros
@@ -14,7 +14,7 @@ def _SHA_parity(x:int, y: int, z: int) -> int:
     return ((x) ^ (y) ^ (z))
 
 # status
-class _Status(Enum):
+class _Status(_Enum):
     SUCCESS = 0
     NULL = 1
     INPUT_TOO_LONG = 2
@@ -115,7 +115,7 @@ def _SHA0_result(context: _SHA0_context, message_digest: bytearray) -> _Status:
     if context.corrupted is not _Status.SUCCESS:
         return context.corrupted
     
-    context_copy = deepcopy(context)
+    context_copy = _deepcopy(context)
 
     if not context_copy.computed:
         _SHA0_finalize(context_copy, 0x80)
@@ -254,6 +254,6 @@ class sha0:
     def copy(self):
         new = sha0()
 
-        new.ctx = deepcopy(self.ctx)
+        new.ctx = _deepcopy(self.ctx)
 
         return new
